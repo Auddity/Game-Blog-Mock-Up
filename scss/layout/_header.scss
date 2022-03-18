@@ -1,0 +1,19 @@
+@use '../abstracts/mixins' as mx;
+@use '../abstracts/variables' as v;
+
+.header {
+  &-social-links {
+    @include mx.flexEnd;
+    font-weight: 500;
+    color: v.$medGray;
+    padding: 1rem;
+    
+    .social-link-item {
+      margin-inline: 2rem;
+      font-size: 2.7rem;
+      // color: v.$white;
+      padding-block-end: .5rem;
+    }
+    
+  }
+}
