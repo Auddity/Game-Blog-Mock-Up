@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as mx;
+
+// Tablets
+@include mx.mq(414px) {
+  // Header
+  .header {
+    &-social-links {
+      justify-content: flex-end;
+    }
+  }
+}

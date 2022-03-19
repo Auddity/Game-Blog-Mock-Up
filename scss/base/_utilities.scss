@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+
+.container {
+  width: 95%;
+  height: 100%;
+  margin-inline: auto;
+}
+
+.accent {
+  color: v.$pinkAccent;
+}
