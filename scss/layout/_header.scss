@@ -43,7 +43,8 @@
     }
   }
 
-  &-dropdown-nav {
+  // TODO: REDO This structure
+  &-dropdown {
     background-color: v.$medGray;
     padding: 1.5rem;
     @include mx.flexEnd;
@@ -57,5 +58,9 @@
       padding: .7rem 1.3rem;
       border-radius: .5rem;
     }
+  }
+
+  &-links.show {
+    height: 100%;
   }
 }

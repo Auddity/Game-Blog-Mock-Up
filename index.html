@@ -55,21 +55,25 @@
           <a href="#" class="logReg">Register</a>
         </div>
       </nav>
-      <div class="header-dropdown-nav">
+
+      <!-- TODO: Redo this structure. -->
+      <div class="header-dropdown">
         <!-- TODO: Hide on desk, show only for mobile -->
-        <div class="open-menu-link">
+        <div class="open-menu-link" id="menu-btn">
           <!-- TODO: image & text | absolute top left -->
           <p>menu</p>
           <i class="ri-menu-line ri-2x"></i>
         </div>
-        <ul class="header-dropdown-nav-links">
-          <!-- TODO: a tags arrow images " Hide on mobile"-->
-          <li class="link-item"></li>
-          <li class="link-item"></li>
-          <li class="link-item"></li>
-          <li class="link-item"></li>
-          <li class="link-item"></li>
-        </ul>
+        <div class="header-dropdown-container">
+          <ul class="header-dropdown-links" id="drop-down-menu">
+            <!-- TODO: a tags arrow images " Hide on mobile"-->
+            <li class="link-item">Home</li>
+            <li class="link-item">Games</li>
+            <li class="link-item">Reviews</li>
+            <li class="link-item">News</li>
+            <li class="link-item">Contact</li>
+          </ul>
+        </div>
       </div>
 
       <div class="hero">
@@ -95,6 +99,6 @@
     </div>
   </header>
   
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
