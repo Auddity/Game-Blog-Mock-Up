@@ -50,21 +50,24 @@
     padding-inline-start: 2.5rem;
 
     &-container {
-      height: 100%;
       align-self: flex-start;
       color: v.$white;
       font-weight: 400;
+      height: 0;
+      overflow: hidden;
+      transition: v.$mobileMenu;
 
       .header-dropdown-links > li {
-        @extend %flex;
-        margin-block: 1rem;
+        margin-block-end: 1.5rem;
 
         a {
-          padding-inline-end: .5rem;
+          @extend %flex;
+
+          i {
+            padding-inline-start: .5rem;
+          }
         }
       }
     }
-
   }
-
 }
