@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+.open-menu-btn {
+  @include mx.flexCenter;
+  align-self: flex-end;
+  gap: 1rem;
+  background-color: v.$darkGrayBlue;
+  text-transform: uppercase;
+  color: v.$white;
+  padding: .7rem 1.3rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}

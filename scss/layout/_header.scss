@@ -43,24 +43,28 @@
     }
   }
 
-  // TODO: REDO This structure
   &-dropdown {
+    @include mx.flexColumn;
     background-color: v.$medGray;
     padding: 1.5rem;
-    @include mx.flexEnd;
+    padding-inline-start: 2.5rem;
 
-    .open-menu-link {
-      @include mx.flexCenter;
-      gap: 1rem;
-      background-color: v.$darkGrayBlue;
-      text-transform: uppercase;
+    &-container {
+      height: 100%;
+      align-self: flex-start;
       color: v.$white;
-      padding: .7rem 1.3rem;
-      border-radius: .5rem;
+      font-weight: 400;
+
+      .header-dropdown-links > li {
+        @extend %flex;
+        margin-block: 1rem;
+
+        a {
+          padding-inline-end: .5rem;
+        }
+      }
     }
+
   }
 
-  &-links.show {
-    height: 100%;
-  }
 }
