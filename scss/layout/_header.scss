@@ -2,7 +2,6 @@
 @use '../abstracts/variables' as v;
 
 .header {
-  height: 100vh;
   font-weight: 700;
 
   &-social-links {
@@ -23,6 +22,7 @@
     }
   }
 
+  // NAVBAR
   .navbar {
     @include mx.flexBetween;
     padding: 2.5rem;
@@ -35,7 +35,6 @@
 
     &-links {
       display: none;
-      // TODO: show on tablet? & above
     }
     
     &-login {
@@ -67,6 +66,24 @@
             padding-inline-start: .5rem;
           }
         }
+      }
+    }
+  }
+
+  // HERO
+  .hero {
+    @include mx.flexColumn;
+    justify-content: center;
+    text-align: center;
+  
+    &-info {
+      padding-inline: 1rem;
+      margin-block: 21rem 2rem;
+  
+      .title {
+        font-size: 6.5rem;
+        color: mx.titleTextColor(v.$purpleOverlay);
+        margin-block-end: 2rem;
       }
     }
   }

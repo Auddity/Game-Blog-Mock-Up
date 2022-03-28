@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 %flex {
   display: flex;
   align-items: center;
@@ -23,6 +25,16 @@
   flex-direction: column;
 }
 
+// font colors
+@function titleTextColor($color) {
+  @if(lightness($color) < 50) {
+    @return #000;
+  } @else {
+    @return v.$white;
+  }
+}
+
+// media queries
 @mixin mq($size) {
   @media only screen and (min-width: $size) {
     @content;
