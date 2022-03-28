@@ -75,8 +75,11 @@
     @include mx.flexColumn;
     justify-content: center;
     text-align: center;
-  
+    height: 800px;
+
     &-info {
+      position: absolute;
+      top: 20rem;
       margin-block: 21rem 2rem;
   
       .title {
