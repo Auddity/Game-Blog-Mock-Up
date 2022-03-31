@@ -47,3 +47,26 @@
     z-index: -1;
   }
 }
+
+// Slider Btns
+.slider-btns-container {
+  position: absolute;
+  bottom: 2rem;
+  
+  .circle-btns-container {
+    padding: 2rem;
+
+    .circle-btn {
+      height: 5rem;
+      width: 5rem;
+      color: v.$white;
+      padding: 1rem;
+      border-radius: 50%;
+      border: 2px solid transparent;
+    }
+  }
+
+  // .next {
+
+  // }
+}

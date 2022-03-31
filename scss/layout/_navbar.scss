@@ -1,0 +1,51 @@
+@use '../abstracts/mixins' as mx;
+@use '../abstracts/variables' as v;
+
+.header {
+    .navbar {
+      @include mx.flexBetween;
+    padding: 2rem 2.5rem;
+    background-color: v.$deepBlue;
+    
+    &-logo {
+      text-transform: uppercase;
+      color: v.$white;
+    }
+    
+    &-links {
+      display: none;
+    }
+    
+    &-login {
+      color: v.$white;
+    }
+  }
+
+  &-dropdown {
+    @include mx.flexColumn;
+    background-color: v.$medGray;
+    padding: 1.2rem;
+    padding-inline-start: 2.5rem;
+    
+    &-container {
+      align-self: flex-start;
+      color: v.$white;
+      font-weight: 400;
+      height: 0;
+      overflow: hidden;
+      transition: v.$mobileMenu;
+      
+      .header-dropdown-links > li {
+        margin-block-end: 1.5rem;
+        
+        a {
+          @extend %flex;
+          
+          i {
+            padding-inline-start: .5rem;
+          }
+        }
+      }
+    }
+  }
+}

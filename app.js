@@ -1,6 +1,7 @@
-import get from "./getElement.js";
+import { get } from "./utils/getElement.js";
+import { slider } from "./utils/slider.js";
 
-// Mobile Drop Down Menu
+// Mobile Drop Down Menu 
 const dropDownLinks = get('drop-down-links');
 const dropDownContainer = get('drop-down-container');
 get('menu-btn').addEventListener('click', () => {
@@ -10,3 +11,7 @@ get('menu-btn').addEventListener('click', () => {
     ? dropDownContainer.style.height = `${linksHeight}px`
     : dropDownContainer.style.height = 0;
 });
+
+// Hero Slider Links
+
+slider()
