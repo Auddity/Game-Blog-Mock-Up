@@ -13,5 +13,4 @@ get('menu-btn').addEventListener('click', () => {
 });
 
 // Hero Slider Links
-
 slider()

@@ -9,3 +9,10 @@
     }
   }
 }
+
+@include mx.mq(1000px) {
+  .next > i {
+    bottom: 40vmin;
+    right: 8%;
+  }
+}

@@ -12,5 +12,5 @@ export const slider = () => {
       }
       target.classList.add('active-btn');
     });
-  })
+  });
 }
