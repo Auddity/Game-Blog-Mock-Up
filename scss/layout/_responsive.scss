@@ -11,6 +11,24 @@
 }
 
 @include mx.mq(1000px) {
+  .header {
+    .navbar {
+      height: 11rem;
+
+      &-links {
+        display: flex;
+        width: min(55%, 70rem);
+        justify-content: space-around;
+      }
+    }
+
+    &-dropdown {
+      display: none;
+    }
+
+
+  }
+
   .next > i {
     bottom: 40vmin;
     right: 8%;

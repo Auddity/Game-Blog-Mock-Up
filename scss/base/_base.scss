@@ -29,6 +29,18 @@ a {
 
 ul {
   list-style-type: none;
+
+  li {
+    color: v.$white;
+
+    a {
+      @extend %flex;
+      
+      i {
+        padding-inline-start: .5rem;
+      }
+    }
+  }
 }
 
 i {

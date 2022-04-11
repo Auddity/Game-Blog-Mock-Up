@@ -72,7 +72,6 @@
 
     &-container {
       align-self: flex-start;
-      color: v.$white;
       font-weight: 400;
       height: 0;
       overflow: hidden;
@@ -80,14 +79,6 @@
 
       .header-dropdown-links > li {
         margin-block-end: 1.5rem;
-
-        a {
-          @extend %flex;
-
-          i {
-            padding-inline-start: .5rem;
-          }
-        }
       }
     }
   }
