@@ -1,5 +1,5 @@
 import { get } from "./utils/getElement.js";
-import { slider } from "./utils/slider.js";
+import { handleLinks, handleSlide } from "./utils/handleSlide.js";
 
 // Mobile Drop Down Menu 
 const dropDownLinks = get('drop-down-links');
@@ -13,4 +13,5 @@ get('menu-btn').addEventListener('click', () => {
 });
 
 // Hero Slider Links
-slider()
+handleLinks();
+handleSlide();

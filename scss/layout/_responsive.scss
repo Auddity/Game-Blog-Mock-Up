@@ -10,10 +10,15 @@
   }
 }
 
-@include mx.mq(1000px) {
+@include mx.mq(1025px) {
+  .container {
+    width: 80%;
+  }
+  
   .header {
     .navbar {
       height: 11rem;
+      padding-inline: 5.5rem;
 
       &-links {
         display: flex;
@@ -25,12 +30,10 @@
     &-dropdown {
       display: none;
     }
-
-
   }
 
   .next > i {
     bottom: 40vmin;
-    right: 8%;
+    right: 10%;
   }
 }
