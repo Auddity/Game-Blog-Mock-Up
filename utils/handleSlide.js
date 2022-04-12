@@ -1,5 +1,6 @@
 import { get } from './getElement.js'
 import { slideFunction } from './slideFunction.js';
+import { data } from './heroData.js';
 
 const circleLinks = get('circle-btns');
 const next = get('next');
@@ -21,5 +22,5 @@ export const handleLinks = () => {
 export const handleSlide = () => {
   next.addEventListener('click', () => {
     slideFunction();
-  })
-}
+  });
+};

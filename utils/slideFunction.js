@@ -10,7 +10,7 @@ container.innerHTML = data.map((info, idx) => {
   if(idx === data.length - 1) position = 'last';
 
   return `
-    <div class="hero-info ${position}">
+    <div class="hero-info ${position}" id="${id}">
       <h1 class="title" id="main-title">${title}</h1>
       <p class="desc-block" id="desc-block">
         ${desc}
@@ -26,22 +26,18 @@ container.innerHTML = data.map((info, idx) => {
   `;
 }).join('');
 
-export const slideFunction = () => {
+export const slideFunction = (type, nodeId) => {
   const active = document.querySelector('.active');
   const last = document.querySelector('.last');
   let next = active.nextElementSibling;
-
   if(!next) {
     next = container.firstElementChild;
   }
-
   active.classList.remove(['active']);
-  active.classList.add('last')
-
   next.classList.remove(['next']);
-  next.classList.add('active');
-
   last.classList.remove(['last']);
+  
+  active.classList.add('last');
+  next.classList.add('active');
   last.classList.add('next');
-  console.log(data);
 }
